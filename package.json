@@ -1,0 +1,14 @@
+{
+  "name": "test_app",
+  "version": "1.0.0",
+  "description": "Test latency of getResource().",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Osamu Koizumi",
+  "license": "ISC",
+  "dependencies": {
+    "mbed-cloud-sdk": "^2.0.0"
+  }
+}
