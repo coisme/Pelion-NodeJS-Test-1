@@ -6,7 +6,7 @@ var connect = new MbedCloudSDK.ConnectApi({
 });
 
 var deviceId = "<< Your Device ID >>"; // Endpoint Name
-var resourceURI = "3200/0/5501";  // Button Count
+var resourceURI = "/3200/0/5501";  // Button Count
 
 var period = 5000; // ms
 
@@ -25,5 +25,14 @@ function getDeviceResource(){
         console.log(error);
     });
 }
+
+/* Fails even if this section is used. 
+connect.startNotifications(function(error) {
+    if (error) throw error;
+    else{
+        console.log('startNotifications()');
+    }
+});
+/* */
 
 setInterval(function(){getDeviceResource()}, period);
