@@ -5,7 +5,7 @@ var connect = new MbedCloudSDK.ConnectApi({
     apiKey: "<< Your API Key >>"
 });
 
-var deviceId = "<< Your Device ID >>"; // Endpoint Name
+var deviceId = "<< Your Device Id >>"; // Endpoint Name
 var resourceURI = "3200/0/5501";  // Button Count
 
 var period = 5000; // ms
@@ -25,5 +25,13 @@ function getDeviceResource(){
         console.log(error);
     });
 }
+
+// Set up the notification channel (pull notifications)
+connect.startNotifications(function(error) {
+    if (error) throw error;
+    else {
+        console.log('startNotification()');
+    }
+});
 
 setInterval(function(){getDeviceResource()}, period);

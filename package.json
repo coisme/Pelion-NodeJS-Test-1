@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "dateformat": "^3.0.3",
-    "mbed-cloud-sdk": "^2.0.0"
+    "mbed-cloud-sdk": "github:armmbed/mbed-cloud-sdk-javascript#1.2.2"
   }
 }
