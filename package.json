@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "dateformat": "^3.0.3",
-    "mbed-cloud-sdk": "^2.0.0"
+    "mbed-cloud-sdk": "^2.0.0",
+    "ping": "^0.2.2"
   }
 }
