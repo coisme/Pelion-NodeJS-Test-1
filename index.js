@@ -3,7 +3,7 @@ var MbedCloudSDK = require("mbed-cloud-sdk");
 var ping = require('ping');
 
 var connect = new MbedCloudSDK.ConnectApi({
-    apiKey: "<< Your API Key >>"
+    apiKey: "<< Your API key >>"
 });
 
 var deviceId = "<< Your Device ID >>"; // Endpoint Name
@@ -41,6 +41,7 @@ var timer = setInterval(() => {
 
         })
         .catch(error => {
+            console.log("Error: " + error);
             // try again
             isGetResourceValueFinished = true;
         });
